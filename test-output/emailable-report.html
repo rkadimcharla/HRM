@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">firefoxTest</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">72,963</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">chromeTest</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">102,395</td><td></td><td></td></tr><tr><th>Total</th><th class="num">1</th><th class="num attn">3</th><th class="num attn">2</th><th class="num">175,358</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">firefoxTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">scripts.TestScripts</td><td><a href="#m0">preCondition</a></td><td rowspan="1">1544554500838</td><td rowspan="1">0</td></tr><tr><th colspan="4">firefoxTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="5">scripts.TestScripts</td><td><a href="#m1">postCondition</a></td><td rowspan="3">1544554573780</td><td rowspan="3">0</td></tr><tr class="skippedeven"><td><a href="#m2">postCondition</a></td></tr><tr class="skippedeven"><td><a href="#m3">postCondition</a></td></tr><tr class="skippedeven"><td><a href="#m4">preCondition</a></td><td rowspan="2">1544554573781</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m5">preCondition</a></td></tr><tr><th colspan="4">firefoxTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">scripts.TestScripts</td><td><a href="#m6">testCreateEmployee</a></td><td rowspan="1">1544554573777</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m7">testDeleteEmployee</a></td><td rowspan="1">1544554573780</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m8">testSortListBox</a></td><td rowspan="1">1544554573782</td><td rowspan="1">0</td></tr></tbody><tbody id="t1"><tr><th colspan="4">chromeTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">scripts.TestScripts</td><td><a href="#m9">testCreateEmployee</a></td><td rowspan="1">1544554532084</td><td rowspan="1">19783</td></tr><tr class="failedeven"><td><a href="#m10">testDeleteEmployee</a></td><td rowspan="1">1544554583003</td><td rowspan="1">4097</td></tr><tr><th colspan="4">chromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">scripts.TestScripts</td><td><a href="#m11">testSortListBox</a></td><td rowspan="1">1544554594633</td><td rowspan="1">6890</td></tr></tbody></table><h2>firefoxTest</h2><h3 id="m0">scripts.TestScripts#preCondition</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;D7H36122&apos;, ip: &apos;192.168.254.11&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at generic.BaseTest.preCondition(BaseTest.java:28)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 29 more
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">scripts.TestScripts#postCondition</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">scripts.TestScripts#postCondition</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">scripts.TestScripts#postCondition</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">scripts.TestScripts#preCondition</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">scripts.TestScripts#preCondition</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">scripts.TestScripts#testCreateEmployee</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">scripts.TestScripts#testDeleteEmployee</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">scripts.TestScripts#testSortListBox</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>chromeTest</h2><h3 id="m9">scripts.TestScripts#testCreateEmployee</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Title is matchingOrangeHRM</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;personal_txtEmpFirstName&quot;}
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;D7H36122&apos;, ip: &apos;192.168.254.11&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=WIN8_1, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60349}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=C:\Users\KADIM_~1\AppData\Local\Temp\scoped_dir10976_29881}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5a4b835e58530ea5851ffdcdc254280d
+*** Element info: {Using=id, value=personal_txtEmpFirstName}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.getAttribute(Unknown Source)
+	at pom.HomePage.verifyFirstName(HomePage.java:71)
+	at scripts.TestScripts.testCreateEmployee(TestScripts.java:31)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m10">scripts.TestScripts#testDeleteEmployee</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Title is matchingOrangeHRM</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=sri]/../../td[9]//input&quot;}
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;D7H36122&apos;, ip: &apos;192.168.254.11&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=WIN8_1, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60766}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=C:\Users\KADIM_~1\AppData\Local\Temp\scoped_dir6108_29456}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ad0857eee3b57503086a29c5aefdef50
+*** Element info: {Using=xpath, value=//a[text()=sri]/../../td[9]//input}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at pom.HomePage.clickEmpCheckBox(HomePage.java:107)
+	at scripts.TestScripts.testDeleteEmployee(TestScripts.java:61)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m11">scripts.TestScripts#testSortListBox</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Title is matchingOrangeHRM<br/>List is sorted:Pass<br/>List is not sorted:pass<br/>List is not sorted:pass<br/>List is not sorted:pass<br/>List is sorted:fail</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
