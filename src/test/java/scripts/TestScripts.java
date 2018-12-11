@@ -10,6 +10,7 @@ import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 /*import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;*/
 import org.openqa.selenium.By;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import generic.BasePage;
@@ -33,6 +34,7 @@ public class TestScripts extends BaseTest{
 		pi.setLastName("Kadim");
 		pi.clickSavebtn();
 		pi.verifyFirstName("Sri");
+		Reporter.log("Hi",true);
 	}
 
 		
